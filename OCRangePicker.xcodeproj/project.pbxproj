@@ -14,6 +14,10 @@
 		6333647E28D60C3E001B7C93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6333647D28D60C3E001B7C93 /* Assets.xcassets */; };
 		6333648128D60C3E001B7C93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6333647F28D60C3E001B7C93 /* LaunchScreen.storyboard */; };
 		6333648428D60C3E001B7C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6333648328D60C3E001B7C93 /* main.m */; };
+		6333648C28D60CB4001B7C93 /* OCRangePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6333648B28D60CB4001B7C93 /* OCRangePicker.m */; };
+		6333648F28D60ECB001B7C93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6333648E28D60ECB001B7C93 /* QuartzCore.framework */; };
+		6333649228D61063001B7C93 /* OCRangePickerKnobLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6333649128D61063001B7C93 /* OCRangePickerKnobLayer.m */; };
+		6333649528D617C3001B7C93 /* OCRangePickerTrackLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6333649428D617C3001B7C93 /* OCRangePickerTrackLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		6333648028D60C3E001B7C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6333648228D60C3E001B7C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6333648328D60C3E001B7C93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6333648A28D60CB4001B7C93 /* OCRangePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRangePicker.h; sourceTree = "<group>"; };
+		6333648B28D60CB4001B7C93 /* OCRangePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRangePicker.m; sourceTree = "<group>"; };
+		6333648E28D60ECB001B7C93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6333649028D61063001B7C93 /* OCRangePickerKnobLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRangePickerKnobLayer.h; sourceTree = "<group>"; };
+		6333649128D61063001B7C93 /* OCRangePickerKnobLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRangePickerKnobLayer.m; sourceTree = "<group>"; };
+		6333649328D617C3001B7C93 /* OCRangePickerTrackLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCRangePickerTrackLayer.h; sourceTree = "<group>"; };
+		6333649428D617C3001B7C93 /* OCRangePickerTrackLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCRangePickerTrackLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6333648F28D60ECB001B7C93 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +59,7 @@
 			children = (
 				6333647028D60C3C001B7C93 /* OCRangePicker */,
 				6333646F28D60C3C001B7C93 /* Products */,
+				6333648D28D60ECB001B7C93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +80,12 @@
 				6333647528D60C3C001B7C93 /* SceneDelegate.m */,
 				6333647728D60C3C001B7C93 /* ViewController.h */,
 				6333647828D60C3C001B7C93 /* ViewController.m */,
+				6333649328D617C3001B7C93 /* OCRangePickerTrackLayer.h */,
+				6333649428D617C3001B7C93 /* OCRangePickerTrackLayer.m */,
+				6333649028D61063001B7C93 /* OCRangePickerKnobLayer.h */,
+				6333649128D61063001B7C93 /* OCRangePickerKnobLayer.m */,
+				6333648A28D60CB4001B7C93 /* OCRangePicker.h */,
+				6333648B28D60CB4001B7C93 /* OCRangePicker.m */,
 				6333647A28D60C3C001B7C93 /* Main.storyboard */,
 				6333647D28D60C3E001B7C93 /* Assets.xcassets */,
 				6333647F28D60C3E001B7C93 /* LaunchScreen.storyboard */,
@@ -74,6 +93,14 @@
 				6333648328D60C3E001B7C93 /* main.m */,
 			);
 			path = OCRangePicker;
+			sourceTree = "<group>";
+		};
+		6333648D28D60ECB001B7C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6333648E28D60ECB001B7C93 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6333647928D60C3C001B7C93 /* ViewController.m in Sources */,
+				6333649528D617C3001B7C93 /* OCRangePickerTrackLayer.m in Sources */,
 				6333647328D60C3C001B7C93 /* AppDelegate.m in Sources */,
 				6333648428D60C3E001B7C93 /* main.m in Sources */,
 				6333647628D60C3C001B7C93 /* SceneDelegate.m in Sources */,
+				6333648C28D60CB4001B7C93 /* OCRangePicker.m in Sources */,
+				6333649228D61063001B7C93 /* OCRangePickerKnobLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCRangePicker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -318,6 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OCRangePicker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
